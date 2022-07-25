@@ -12,11 +12,13 @@
     />
     <!-- fontawesome-kit  -->
     <script src="https://kit.fontawesome.com/88918fa279.js" crossorigin="anonymous"></script>
+    <!-- style link  -->
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header>
       <!-- nav-start -->
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg fixed-top bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="comapny-logo" />
@@ -38,37 +40,39 @@
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Bags</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#bags">Shoes</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- nav-end  -->
+      <!-- slider start  -->
       <section>
         <div
           id="carouselExampleControls"
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active bg-info p-5">
-              <div class="row">
-                <div class="col-lg-7 bg-denger  d-flex align-items-center">
+          <div class="carousel-inner slider-body">
+            <div class="carousel-item active  p-5">
+              <div class="row ">
+                <div class="col-lg-7 d-flex align-items-center">
                   <div class="ms-5 w-100">
                     <h1>Cool Headphone Here</h1>
                     <p>
                       It is very awesome headphone. Extra base and clear sound
                     </p>
                     <h2>$800</h2>
-                    <button class="btn btn-warning border-0 rounded-4">
-                      Buy Now
+                    <button class="btn banner_buy_btn border-0 rounded-4">
+                      Buy Now <i class="fa-solid fa-arrow-right ms-2"></i>
                     </button>
                   </div>
                 </div>
@@ -90,8 +94,8 @@
                           It is very awesome headphone. Extra base and clear sound
                         </p>
                         <h2>$800</h2>
-                        <button class="btn btn-warning border-0 rounded-4">
-                          Buy Now
+                        <button class="btn banner_buy_btn border-0 rounded-4">
+                          Buy Now <i class="fa-solid fa-arrow-right ms-2"></i>
                         </button>
                       </div>
                     </div>
@@ -113,8 +117,8 @@
                           It is very awesome headphone. Extra base and clear sound
                         </p>
                         <h2>$800</h2>
-                        <button class="btn btn-warning border-0 rounded-4">
-                          Buy Now
+                        <button class="btn banner_buy_btn border-0 rounded-4">
+                          Buy Now <i class="fa-solid fa-arrow-right ms-2"></i>
                         </button>
                       </div>
                     </div>
@@ -147,7 +151,7 @@
           </button>
         </div>
       </section>
-      <!-- nav-end -->
+      <!-- slider-end -->
     </header>
     <main>
         <!-- catgories start -->
@@ -155,19 +159,19 @@
             <div class="container m-5">
                 <div class="row justify-content-center g-3">
                   <div class=" col-lg-3 col-md-6 col-sm-12">
-                    <div class="d-flex align-items-center p-2 bg-warning rounded-3">
+                    <div class="d-flex align-items-center p-2 watch_catalog rounded-3">
                         <h2 class="text-light">Watches</h2>
                         <img src="images/categories/watch.png" alt="">
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="d-flex align-items-center p-2 bg-warning  rounded-3">
+                    <div class="d-flex align-items-center p-2 shoes_catalog  rounded-3">
                         <h2 class="text-light">Shoes</h2>
                         <img src="images/categories/shoes.png" alt="">
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="d-flex align-items-center p-2 bg-warning  rounded-3">
+                    <div class="d-flex align-items-center p-2 bags_catalog rounded-3">
                         <h2 class="text-light">Bags</h2>
                         <img src="images/categories/bag.png" alt="">
                     </div>
@@ -178,13 +182,15 @@
         </section>
         <!-- catgories end -->
         <!-- Products start -->
-        <section>
-            <div class="row g-4 p-5">
+        <section class="container_products">
+            <h1 class=" text-center">Products</h1>
+            <div class="row g-4 p-5" id="bags">
+                <h2 class="catalog_name">Bags</h2>
                 <!-------------
                     Bag product-1
                 ----------->
                 <div class="col-lg-4 col-md-6 col-sm-12 ">
-                     <div class="card h-100 ">
+                     <div class="card h-100 shadow-lg border border-0 rounded-4">
                     <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                     <div class="card-body d-flex align-items-center flex-column text-center">
                       <h3 class="card-title">Red Tour Bag</h3>
@@ -192,7 +198,7 @@
                         so manyu people are very interest for that
                       </p>
                       <h3>$1000</h3>
-                      <button class="btn btn-warning mx-5">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                      <button class="btn product_buy_btn">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
                     </div>
                     
                     
@@ -203,7 +209,7 @@
                     Bag product-2  
                     ---------------->
                 <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class="card h-100 ">
+                    <div class="card h-100 shadow-lg border border-0 rounded-4">
                       <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                       <div class="card-body d-flex align-items-center flex-column text-center">
                         <h3 class="card-title">Red Tour Bag</h3>
@@ -211,7 +217,7 @@
                           so manyu people are very interest for that
                         </p>
                         <h3>$1000</h3>
-                        <button class="btn btn-warning mx-5">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                        <button class="btn product_buy_btn">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
                       </div>
                     </div>
                   </div>
@@ -219,7 +225,7 @@
                     Bag product-3
                 ------------------>
                   <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class="card h-100 ">
+                    <div class="card h-100 shadow-lg border border-0 rounded-4">
                       <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                       <div class="card-body d-flex align-items-center flex-column text-center">
                         <h3 class="card-title">Red Tour Bag</h3>
@@ -227,20 +233,20 @@
                           so manyu people are very interest for that
                         </p>
                         <h3>$1000</h3>
-                        <button class="btn btn-warning mx-5">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                        <button class="btn product_buy_btn">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
                       </div>
                     </div>
                   </div>
               </div>
               
                     <!-- Shoes sector -->
-              <div class="row g-4 p-5">
-                <h2>Shoes</h2>
+              <div class="row g-4 p-5" id="shoes">
+                <h2 class="catalog_name">Shoes</h2>
                 <!-------------
                     Shoe product-1
                 ----------->
                 <div class="col-lg-4 col-md-6 col-sm-12 ">
-                     <div class="card h-100 ">
+                     <div class="card h-100 shadow-lg border border-0 rounded-4">
                     <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                     <div class="card-body d-flex align-items-center flex-column text-center">
                         <h3 class="card-title">Red Tour Bag</h3>
@@ -248,7 +254,7 @@
                           so manyu people are very interest for that
                         </p>
                         <h3>$1000</h3>
-                        <button class="btn btn-warning mx-5">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                        <button class="btn product_buy_btn">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
                       </div>
                   </div>
                 </div>
@@ -256,7 +262,7 @@
                     shoe product-2  
                     ---------------->
                 <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class="card h-100 ">
+                    <div class="card h-100 shadow-lg border border-0 rounded-4 ">
                       <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
                       <div class="card-body d-flex align-items-center flex-column text-center">
                         <h3 class="card-title">Red Tour Bag</h3>
@@ -264,7 +270,7 @@
                           so manyu people are very interest for that
                         </p>
                         <h3>$1000</h3>
-                        <button class="btn btn-warning mx-5">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                        <button class="btn product_buy_btn">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
                       </div>
                     </div>
                   </div>
@@ -272,7 +278,7 @@
                     shoe product-3
                 ------------------>
                   <div class="col-lg-4 col-md-6 col-sm-12 ">
-                    <div class="card h-100 ">
+                    <div class="card h-100 shadow-lg border border-0 rounded-4">
                       <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
                       <div class="card-body d-flex align-items-center flex-column text-center">
                         <h3 class="card-title">Red Tour Bag</h3>
@@ -280,7 +286,7 @@
                           so manyu people are very interest for that
                         </p>
                         <h3>$1000</h3>
-                        <button class="btn btn-warning mx-5">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                        <button class="btn product_buy_btn">Buy Now <i class="fa-solid fa-arrow-right ms-2"></i></button>
                       </div>
                     </div>
                   </div>
@@ -288,28 +294,30 @@
         </section>
          <!-- Products end -->
         <!-- subscribe part start -->
-        <section>
-            <div class="d-flex justify-content-center align-items-center flex-column m-5">
+        <section class="container_subscribe">
+            <div class="d-flex justify-content-center align-items-center flex-column p-5" >
                 <div>
                     <h1>LET'S STAY IN TOUCH</h1>
                     <p>Get updates on sales specials and more</p>
                 </div>
                 <div>
-                    <form class="">
+                    <form >
                         <div class="mb-3 d-flex justify-content-center align-items-center">
-                          <label for="exampleInputEmail1" class="form-label" placeholde="Email address"></label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <button type="submit" class="btn btn-primary ms-2">Subscribe</button>
+                          <label for="subscribe" class="form-label" placeholde="Email address"></label>
+                          <input type="email" class="form-control" id="subscribe" aria-describedby="emailHelp">
+                        <button type="submit" class="btn banner_buy_btn m-2">Subscribe</button>
                         </div>
                       </form>
                 </div>
             </div>
         </section>
-        <!-- subscribe part start -->
+        <!-- subscribe part end -->
     </main>
+    <!-- footer-start  -->
     <footer class="text-center">
        <span>@2022-26-07 all right received prema</span>
     </footer>
+     <!-- footer-end  -->
     <!-- bootstrap-javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
